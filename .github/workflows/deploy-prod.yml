@@ -1,9 +1,9 @@
 name: Deploy model to online endpoint (PR comment)
 
 on:
-  issue_comment:
-    types: [created]
-
+  push:
+    branches:
+      - arthur_reis_lab1
 permissions:
   contents: read
   issues: write
