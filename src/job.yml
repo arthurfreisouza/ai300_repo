@@ -6,8 +6,8 @@ command: >-
   --reg_rate ${{inputs.reg_rate}}
 inputs:
   training_data:
-    type: <uri_file_or_uri_folder>
-    path: <azureml:data-asset-name@latest>
+    type: uri_folder
+    path: azureml://subscriptions/9fd0207b-08b2-4e5f-a748-8de9264eaece/resourcegroups/rg-ai300-lc07f6357495b465aad/workspaces/mlw-ai300-lc07f6357495b465aad/datastores/workspaceblobstore/paths/LocalUpload/36097ef2315572f74f4f65485b810592213294e30846493c0dc5aff37260fc7d/data/
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-1.0-ubuntu20.04-py38-cpu@latest
 compute: azureml:aml-cluster
